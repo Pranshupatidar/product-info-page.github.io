@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito+Sans:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 15%;
+  margin-top: 6vh;
+  width: 100vw;
+  height: 70vh;
+}
+
+/* Mobile responsive for Container */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: 0%;
+  }
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.image-section {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  height: 80%;
+}
+
+.row {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Add a pointer when hovering */
+.cursor,
+.cart,
+.wishlist {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  background-color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  padding: 16px;
+  color: grey;
+  font-weight: bold;
+  border-radius: 100%;
+  opacity: 0.5;
+  margin: 5px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 0.8;
+}
+
+/* 5 columns side by side */
+.column {
+  width: 19%;
+  margin-top: 5px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img {
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+}
+
+/* Mobile responsive for .image-section */
+@media only screen and (max-width: 768px) {
+  .image-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.text-section {
+  padding: 60px;
+  width: 50%;
+  height: 100%;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.dispatch {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.sofa-name {
+  font-weight: 600;
+  height: 6vh;
+}
+
+.description,
+footer,
+.cart,
+.wishlist {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.cart {
+  padding: 12px 30px;
+  background-color: #000;
+  color: #f4f4f4;
+  font-size: 12px;
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.wishlist {
+  padding: 12px 30px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rating {
+  color: rgb(36, 168, 133);
+}
+
+/* Mobile responsive for .text-section */
+@media only screen and (max-width: 768px) {
+  .text-section {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sofa-name,
+  .description {
+    text-align: center;
+  }
+
+  .button-section {
+    display: flex;
+  }
+}
+
+footer {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 24vh;
+  padding: 1% 15%;
+}
+
+.payment,
+.delivery,
+.return {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  height: 100%;
+  padding-top: 2%;
+}
+
+.checked {
+  color: rgb(36, 168, 133);
+}
+
+.f1 {
+  margin: 0;
+  width: 80%;
+}
+
+.ab {
+  font-size: 18px;
+  margin-right: 16px;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    height: 0%;
+    padding: 0% 10% 5%;
+    align-items: baseline;
+  }
+
+  .payment,
+  .delivery,
+  .return {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+  }
+
+  .ab {
+    margin-right: 0px;
+    padding-top: 0px;
+    text-align: center;
+  }
+
+  .f1 {
+    width: 100%;
+    height: 160px;
+  }
+
+  .payment,
+  .delivery,
+  .return {
+    text-align: center;
+  }
+
+  .topic {
+    height: 30%;
+  }
+}
+
+h4 {
+  margin-bottom: 0px;
+  opacity: 0.8;
+}
+
+p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+h1 {
+  margin: 0;
+}
