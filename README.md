@@ -1,1 +1,1 @@
-# skynox-pranshu-patidar.github.io
+# product-info-page.github.io
